@@ -1,0 +1,14 @@
+{
+    "baseUrl": "http://eaapp.somee.com/",
+    "env": {
+        "username": "admin"
+    },
+    "ignoreTestFiles": [
+        "**/1-getting-started/*.js",
+        "**/2-advanced-examples/*.js"
+    ],
+    "screenshotsFolder": "cypress/videos",
+    "viewportWidth": 1000,
+    "viewportHeight": 660,
+    "testFiles": "**/*.feature"
+}

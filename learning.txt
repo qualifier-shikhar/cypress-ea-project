@@ -1,0 +1,3 @@
+Using fixtures in spec files
+Problem with cypress-cucumber-preprocessor(use `/steps` in import)
+When typing username and password use log:false to hide password while running with CI(ex. cy.get('#Password').type(password, {log:false}))
