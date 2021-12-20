@@ -1,3 +1,6 @@
 Using fixtures in spec files
 Problem with cypress-cucumber-preprocessor(use `/steps` in import)
 When typing username and password use log:false to hide password while running with CI(ex. cy.get('#Password').type(password, {log:false}))
+IgnoringFiles is used to ignore files and "testFiles" is used to include files. Files not written "testFiles" are ignored.
+
+Learned how to integrate docker with cypress. First write "DockerFile" then write "docker-compose.yml file" then use docker-compose -f docker-compose.yml up. In this case the screenshot and videos of running test is not saved in local system so to resolve this we use volume mapping. Using this we can copy files created in container to local system.

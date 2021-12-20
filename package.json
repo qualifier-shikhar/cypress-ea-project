@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "cy:open": "npx cypress open"
+  },
   "dependencies": {
     "cypress": "^9.1.1",
     "cypress-cucumber-preprocessor": "^4.3.1",
