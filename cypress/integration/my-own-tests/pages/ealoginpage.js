@@ -3,7 +3,7 @@
 export class EALoginPage {
 
     performLogin(userName, password) {
-        cy.get('#UserName').type(userName)
+        cy.xpath('//input[@id="UserName"]').type(userName)
         cy.get('#Password').type(password, {log: false})
     }
 

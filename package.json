@@ -9,5 +9,9 @@
   },
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": true
+  },
+  "devDependencies": {
+    "cypress-file-upload": "^5.0.8",
+    "cypress-xpath": "^1.6.2"
   }
 }
