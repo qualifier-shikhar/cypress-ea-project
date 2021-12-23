@@ -1,2 +1,9 @@
 node_modules
 learning.txt
+
+# reports
+cypress/results/junit/*.xml
+cypress/results/mochawesome/*.json
+
+#videos
+cypress/videos/*

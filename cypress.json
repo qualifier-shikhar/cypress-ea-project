@@ -3,10 +3,15 @@
     "env": {
         "username": "admin"
     },
+    "reporter": "cypress-multi-reporters",
+    "reporterOptions": {
+        "configFile": "reporter-config.json"
+    },
     "ignoreTestFiles": [
         "**/1-getting-started/*.js",
         "**/2-advanced-examples/*.js",
-        "**/Cucumber/EATest/*.js"
+        "**/Cucumber/EATest/*.js",
+        "**/my-own-test/*.js"
     ],
     "screenshotsFolder": "cypress/videos"
 }
