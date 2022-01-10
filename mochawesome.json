@@ -1,14 +1,14 @@
 {
   "stats": {
-    "suites": 3,
-    "tests": 3,
-    "passes": 3,
+    "suites": 5,
+    "tests": 5,
+    "passes": 5,
     "pending": 0,
     "failures": 0,
-    "start": "2021-12-23T09:41:45.668Z",
-    "end": "2021-12-23T09:42:44.333Z",
-    "duration": 31338,
-    "testsRegistered": 3,
+    "start": "2021-12-31T09:35:07.394Z",
+    "end": "2021-12-31T09:37:09.068Z",
+    "duration": 51953,
+    "testsRegistered": 5,
     "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "e5aa3785-082c-4fb0-a35f-922a57d76503",
+      "uuid": "4ababeee-7d26-4eb3-a509-ac6ecf9cda86",
       "title": "",
       "fullFile": "cypress/integration/my-own-tests/alertCheck.spec.js",
       "file": "cypress/integration/my-own-tests/alertCheck.spec.js",
@@ -27,8 +27,8 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "60d9edf0-be64-4f07-bd2b-0a6ba742ebb6",
-          "title": "Actions",
+          "uuid": "b46639a9-e004-4881-a9cc-4765214bb232",
+          "title": "checking alert",
           "fullFile": "",
           "file": "",
           "beforeHooks": [],
@@ -36,31 +36,31 @@
           "tests": [
             {
               "title": "checking alert",
-              "fullTitle": "Actions checking alert",
+              "fullTitle": "checking alert checking alert",
               "timedOut": null,
-              "duration": 10889,
+              "duration": 4951,
               "state": "passed",
-              "speed": "slow",
+              "speed": "fast",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
               "code": "cy.contains('Click for JS Alert').should('exist').click(); // firing window: alert event with on() method\ncy.on('window:alert', function (txt) {\n  //Mocha assertions\n  expect(txt).to.contains('I am a JS Alert');\n});\ncy.on('window:confirm', function () {\n  return true;\n});\ncy.get('[id=\"result\"]').should('contain', 'You successfully clicked an alert');",
               "err": {},
-              "uuid": "949bcf99-cf08-4d71-a697-0df36cee19e8",
-              "parentUUID": "60d9edf0-be64-4f07-bd2b-0a6ba742ebb6",
+              "uuid": "93373b16-b46a-413f-af33-70a7743a1340",
+              "parentUUID": "b46639a9-e004-4881-a9cc-4765214bb232",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "949bcf99-cf08-4d71-a697-0df36cee19e8"
+            "93373b16-b46a-413f-af33-70a7743a1340"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 10889,
+          "duration": 4951,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -76,7 +76,7 @@
       "_timeout": 2000
     },
     {
-      "uuid": "d17efbf8-9c92-4ef9-9cc7-d67112574e6a",
+      "uuid": "8c18b935-ab8d-4e08-aefa-0f5cc49cc384",
       "title": "",
       "fullFile": "cypress/integration/my-own-tests/ea.spec.js",
       "file": "cypress/integration/my-own-tests/ea.spec.js",
@@ -85,7 +85,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "ab141a86-d4ac-4747-b91d-25fef18332c2",
+          "uuid": "5b3410b4-fb11-46b1-b0ac-951048a7f3ad",
           "title": "Testing of EA App",
           "fullFile": "",
           "file": "",
@@ -96,7 +96,7 @@
               "title": "Testing EA Site for assertion",
               "fullTitle": "Testing of EA App Testing EA Site for assertion",
               "timedOut": null,
-              "duration": 8571,
+              "duration": 9549,
               "state": "passed",
               "speed": "medium",
               "pass": true,
@@ -105,20 +105,20 @@
               "context": null,
               "code": "cy.visit(\"http://www.executeautomation.com/site\"); // cy.get(\"[aria-label='jump to slide 2']\", {timeout:60000}).should(($x) => {\n//     expect($x).to.have.class(\"ls-nav-active\")\n// })",
               "err": {},
-              "uuid": "1b7c4662-fa6a-4b95-a372-57aad5180f87",
-              "parentUUID": "ab141a86-d4ac-4747-b91d-25fef18332c2",
+              "uuid": "7dce8b31-31c1-4500-81a9-84b788fa3823",
+              "parentUUID": "5b3410b4-fb11-46b1-b0ac-951048a7f3ad",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "1b7c4662-fa6a-4b95-a372-57aad5180f87"
+            "7dce8b31-31c1-4500-81a9-84b788fa3823"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 8571,
+          "duration": 9549,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -134,7 +134,7 @@
       "_timeout": 2000
     },
     {
-      "uuid": "286166e8-187e-474e-9023-475dba2c50b2",
+      "uuid": "22b53816-81e8-4568-b8d1-86975e8201ed",
       "title": "",
       "fullFile": "cypress/integration/my-own-tests/eaapp.spec.js",
       "file": "cypress/integration/my-own-tests/eaapp.spec.js",
@@ -143,8 +143,8 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "3b3ee582-8bab-46a7-a72f-6d46111ed32c",
-          "title": "Testing of EA App",
+          "uuid": "ec9fa8dc-0017-45bc-981b-d7ab41b8429e",
+          "title": "Testing of EA Table",
           "fullFile": "",
           "file": "",
           "beforeHooks": [],
@@ -152,9 +152,9 @@
           "tests": [
             {
               "title": "Performing Benefit Operation",
-              "fullTitle": "Testing of EA App Performing Benefit Operation",
+              "fullTitle": "Testing of EA Table Performing Benefit Operation",
               "timedOut": null,
-              "duration": 11878,
+              "duration": 13594,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -163,20 +163,136 @@
               "context": null,
               "code": "cy.contains(\"Employee List\").click();\ncy.get('.table').find('tr').contains(\"John\").parent().contains(\"Benefits\").click();\ncy.get('.table').find('tr').as(\"rows\");\ncy.get(\"@rows\").then(function ($row) {\n  cy.wrap($row).click({\n    multiple: true\n  });\n});",
               "err": {},
-              "uuid": "8a1e3840-77da-4708-b845-6ae49dc57fd5",
-              "parentUUID": "3b3ee582-8bab-46a7-a72f-6d46111ed32c",
+              "uuid": "0284cc9c-bfc3-47b3-bbd0-bd1bcea5646a",
+              "parentUUID": "ec9fa8dc-0017-45bc-981b-d7ab41b8429e",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "8a1e3840-77da-4708-b845-6ae49dc57fd5"
+            "0284cc9c-bfc3-47b3-bbd0-bd1bcea5646a"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 11878,
+          "duration": 13594,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "31d07fa5-ccad-49c8-a99c-d41625b16a6d",
+      "title": "",
+      "fullFile": "cypress/integration/my-own-tests/fileUpload.spec.js",
+      "file": "cypress/integration/my-own-tests/fileUpload.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "64256560-a0a9-4765-9384-9a9c30cbb58c",
+          "title": "Actions",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "file upload demo",
+              "fullTitle": "Actions file upload demo",
+              "timedOut": null,
+              "duration": 12410,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains('File Uploader').should('be.visible');\nvar filepath = 'images/QAPic.png';\ncy.get('input[type=\"file\"]').attachFile(filepath);\ncy.get('#file-submit').click();\ncy.get('#uploaded-files').invoke('text').then(function (text) {\n  expect(text.trim()).equal('QAPic.png');\n});",
+              "err": {},
+              "uuid": "45df1bbd-8edd-4c72-a2cd-c1eec4ef2553",
+              "parentUUID": "64256560-a0a9-4765-9384-9a9c30cbb58c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "45df1bbd-8edd-4c72-a2cd-c1eec4ef2553"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 12410,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "e805c6c8-8a63-48b8-a50c-0dfda8972caf",
+      "title": "",
+      "fullFile": "cypress/integration/Cucumber/EATest.feature",
+      "file": "cypress/integration/Cucumber/EATest.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "bee880d5-3369-457c-a787-66e0aad9eb3d",
+          "title": "EATestFeature",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Test the login feature",
+              "fullTitle": "EATestFeature Test the login feature",
+              "timedOut": null,
+              "duration": 11449,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "610770bf-4c80-47fc-bec2-24cf20777be7",
+              "parentUUID": "bee880d5-3369-457c-a787-66e0aad9eb3d",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "610770bf-4c80-47fc-bec2-24cf20777be7"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 11449,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

@@ -5,7 +5,7 @@
     "mochawesome:merge": "npx mochawesome-merge \"cypress/results/mochawesome/*.json\" > mochawesome.json && npx marge mochawesome.json",
     "junit:merge": "npx junit-merge -d cypress/results/junit -o cypress/results/junit/result.xml",
     "cy:open": "npx cypress open",
-    "cy:run": "npm run prereport && npx cypress run"
+    "cy:run": "npm run prereport && npx cypress run && npm run junit:merge && npm run mochawesome:merge"
   },
   "dependencies": {
     "@percy/cypress": "^3.1.1",

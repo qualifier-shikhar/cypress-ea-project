@@ -13,5 +13,6 @@
         "**/Cucumber/EATest/*.js",
         "**/my-own-test/*.js"
     ],
-    "screenshotsFolder": "cypress/videos"
+    "screenshotsFolder": "cypress/videos",
+    "experimentalStudio": true
 }

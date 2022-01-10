@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-context('Actions', () => {
+context('checking alert', () => {
     beforeEach(() => {
         cy.visit('https://the-internet.herokuapp.com/javascript_alerts')
     })

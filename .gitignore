@@ -4,6 +4,8 @@ learning.txt
 # reports
 cypress/results/junit/*.xml
 cypress/results/mochawesome/*.json
+mochawesome-report/*
+!mochawesome-report/.gitkeep
 
 #videos
 cypress/videos/*
